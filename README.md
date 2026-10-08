@@ -66,6 +66,10 @@ flowchart LR
 
 ## Install (Windows)
 
+**Only want the claude.ai part?** Download `claude-usage-monitor-extension-v1.0.0.zip` from the [latest release](https://github.com/CS-Abuhelal/claude-usage-monitor/releases/latest) and unzip it. Then open `chrome://extensions`, turn on **Developer mode**, click **Load unpacked** and choose the unzipped `claude-usage-monitor-extension` folder. No Node or install script needed.
+
+For everything (status line, Desktop footer and extension):
+
 Requirements:
 - **Node.js 18+** on `PATH`, for the status line.
 - **Claude Code** for the terminal status line.

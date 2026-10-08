@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Claude Usage Monitor",
+  "version": "1.0.0",
+  "description": "Compact weekly, session and credit usage indicators in claude.ai's header, from the same data as Settings > Usage.",
+  "minimum_chrome_version": "116",
+  "icons": { "16": "icons/icon16.png", "48": "icons/icon48.png", "128": "icons/icon128.png" },
+  "background": { "service_worker": "background.js", "type": "module" },
+  "permissions": ["webRequest"],
+  "host_permissions": ["https://claude.ai/*"],
+  "content_scripts": [
+    { "matches": ["https://claude.ai/*"], "js": ["content.js"], "run_at": "document_idle", "all_frames": false }
+  ],
+  "web_accessible_resources": [
+    { "resources": ["src/*.mjs", "src/core/*.mjs"], "matches": ["https://claude.ai/*"] }
+  ]
+}

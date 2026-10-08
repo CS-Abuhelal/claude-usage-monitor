@@ -1,0 +1,6 @@
+{
+  "name": "usage-monitor",
+  "version": "1.1.0",
+  "description": "Plan usage (weekly, session, cloud credits) as plain footer text beside the model picker in Claude Desktop's Code tab.",
+  "types": "./types/index.d.ts"
+}

@@ -1,0 +1,16 @@
+# Runtime data: live usage figures and the refresh lock
+cache/
+
+# The installer's copy of your Claude Code settings.json
+backup/
+
+# Written by Claude Code each time it loads the plugin (this build's API types
+# and the MCP tools connected on this machine); regenerated on every load
+claude-code-plugin/.claude-plugin/types/
+
+# Temporary files
+*.tmp
+*.lock
+node_modules/
+.DS_Store
+Thumbs.db
